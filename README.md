@@ -12,22 +12,20 @@ stack:      ROS 2 · Isaac Lab · PyTorch · OpenCV · Nav2
 
 ## What I'm building
 
-**Unitree G1 locomotion — Isaac Lab**
-PPO locomotion policy trained through a 7-phase curriculum (standing → omnidirectional walking).
-Achieved stable bipedal gait at 1.5 m/s. Actively extending to rough terrain with scandot observations.
+**ADAPT — Active Dynamic Avoidance with Pedestrian Trajectory Reasoning (ROS 2 / UIUC GEM e4)**
+Diffusion Transformer pedestrian predictor (DDPM-trained, DDIM 10-step) feeds an MPPI motion planner
+(K=600 rollouts, 3 s horizon) for proactive avoidance instead of reactive late braking. Text-promptable
+goal selection via YOLO-World / LangSAM. Deployed on the UIUC Polaris GEM e4 drive-by-wire platform.
 
-**H-MARL — dual humanoid coordination**
-Hierarchical MARL: high-level PPO navigator [64,64] + decentralized low-level locomotion agents [256,256].
-Two G1 robots autonomously locate, approach, and stop at a fixed distance from each other in Isaac Lab.
+**Terrain-aware RL humanoid locomotion — Unitree G1 · Isaac Lab**
+PPO policy with a stand → walk → domain-randomization curriculum; a CNN encodes height scans +
+proprioception. Domain randomization over mass, friction, PD gains, and pushes; tested across 15
+unique terrains with sim-to-real transfer planned.
 
-**VLA fine-tuning (HumanVLA)**
-Replaced visual encoder with frozen CLIP backbone. Diagnosed catastrophic forgetting as primary failure mode.
-Investigating frozen-backbone vs. selective-unfreeze tradeoffs for robot manipulation tasks.
-
-**AutoShield — real-vehicle autonomy stack (ROS 2 / UIUC GEM)**
-LiDAR (Ouster OS1-128) + RGB-D (OAK-D LR / YOLOv11) pedestrian pipeline with DBSCAN clustering,
-EMA centroid tracking, weighted sensor fusion, TTC estimation, and Stanley/PID control with hard-brake override.
-Deployed on a real drive-by-wire vehicle.
+**Conversational VLA navigation — Unitree Go1**
+Fine-tuned NaVILA-8B with an added "ask user" action token: when uncertain, the robot opens a
+clarification loop instead of committing, with a GPT-4o oracle generating the questions. Trained via
+LoRA + DAgger; ~1 Hz offboard inference with 8-bit quantization.
 
 ---
 
@@ -35,9 +33,9 @@ Deployed on a real drive-by-wire vehicle.
 
 | | |
 |---|---|
-| **Hyundai Motor Group Innovation Centre SG** | Robotics Fleet Software Engineer — 200+ AMR fleet management |
-| **Venti Technologies** | AV Simulation Engineer |
-| **A\*STAR** | Research — end-to-end CNN navigation on Pioneer P3-DX hardware |
+| **Hyundai Motor Group Innovation Centre SG** | Robotics Fleet Software Engineer Intern — 200+ AMR fleet management |
+| **Venti Technologies** | AV Simulation Engineer Intern |
+| **A\*STAR** | Robotics & AI Research Intern — end-to-end CNN navigation on Pioneer P3-DX hardware |
 
 ---
 
@@ -49,4 +47,4 @@ Deployed on a real drive-by-wire vehicle.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-sunnydeshpande.com-58a6ff?style=flat-square&logo=googlechrome&logoColor=white)](https://sunnydeshpande.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sunnydeshpande)
-[![Email](https://img.shields.io/badge/sunnynd2@illinois.edu-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sunnynd2@illinois.edu)
+[![Email](https://img.shields.io/badge/sunnydeshpande9900@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sunnydeshpande9900@gmail.com)
