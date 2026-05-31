@@ -27,6 +27,11 @@ Fine-tuned NaVILA-8B with an added "ask user" action token: when uncertain, the 
 clarification loop instead of committing, with a GPT-4o oracle generating the questions. Trained via
 LoRA + DAgger; ~1 Hz offboard inference with 8-bit quantization.
 
+**Contact-gated residual RL — USB-A insertion (UR5e)**
+SAC residual policy layered on a classical CV + IK base, gated by force/torque feedback for precise
+contact-rich insertion. Trained in MuJoCo with domain randomization; achieves zero-shot sim-to-real
+transfer on a real UR5e arm.
+
 ---
 
 ## Experience
