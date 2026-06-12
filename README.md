@@ -55,5 +55,5 @@ transfer on a real UR5e arm.
 ---
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-sunnydeshpande.com-58a6ff?style=flat-square&logo=googlechrome&logoColor=white)](https://sunnydeshpande.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sunnydeshpande)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sunny-deshpande)
 [![Email](https://img.shields.io/badge/sunnydeshpande9900@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sunnydeshpande9900@gmail.com)
