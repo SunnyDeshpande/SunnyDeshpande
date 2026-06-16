@@ -4,7 +4,7 @@
 
 ```yaml
 focus:      humanoid robot learning · full-stack autonomy · sim-to-real transfer
-languages:  C++ (17/20) · Python
+languages:  C++ · Python
 stack:      ROS 2 · Isaac Lab · PyTorch · OpenCV · Nav2
 ```
 
