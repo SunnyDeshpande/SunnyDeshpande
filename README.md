@@ -14,8 +14,18 @@ stack:      ROS 2 · Isaac Lab · PyTorch · OpenCV · Nav2
 
 **Terrain-aware RL humanoid locomotion - Unitree G1 · Isaac Lab**
 PPO policy with a stand → walk → domain-randomization curriculum; a CNN encodes height scans +
-proprioception. Domain randomization over mass, friction, PD gains, and pushes; tested across 15
-unique terrains with sim-to-real transfer planned.
+proprioception. Domain randomization over mass, friction, PD gains, pushes, noise, and actuator
+and observation latency. Sim-to-real pipeline validated on hardware - the G1 stands and walks
+forward on the gantry; next steps harden the policy against varied initial states and disturbances,
+then add a stand ↔ walk policy switch.
+
+**Cooperative multi-USV bathymetric mapping - BlueBoat · MOOS-IvP**
+Leader/follower BlueBoat USVs running coordinated GPS-waypoint navigation under MOOS-IvP, fusing
+sonar returns into shared bathymetric maps. Mission planning and monitoring through QGroundControl.
+
+**Autonomous crop-row phenotyping agbot - Farm-ng Amiga**
+Autonomous crop-row traversal for in-field phenotyping on the Farm-ng Amiga platform, combining
+RTK-GNSS waypointing with camera-based lane tracking and an MPC controller to hold the row.
 
 ---
 
