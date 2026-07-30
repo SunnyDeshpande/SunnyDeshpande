@@ -12,13 +12,6 @@ stack:      ROS 2 · Isaac Lab · PyTorch · OpenCV · Nav2
 
 ## What I'm building
 
-**Terrain-aware RL humanoid locomotion - Unitree G1 · Isaac Lab**
-PPO policy with a stand → walk → domain-randomization curriculum; a CNN encodes height scans +
-proprioception. Domain randomization over mass, friction, PD gains, pushes, noise, and actuator
-and observation latency. Sim-to-real pipeline validated on hardware - the G1 stands and walks
-forward on the gantry; next steps harden the policy against varied initial states and disturbances,
-then add a stand ↔ walk policy switch.
-
 **Cooperative multi-USV bathymetric mapping - BlueBoat · MOOS-IvP**
 Leader/follower BlueBoat USVs running coordinated GPS-waypoint navigation under MOOS-IvP, fusing
 sonar returns into shared bathymetric maps. Mission planning and monitoring through QGroundControl.
@@ -30,6 +23,12 @@ RTK-GNSS waypointing with camera-based lane tracking and an MPC controller to ho
 ---
 
 ## What I've recently built
+
+**Terrain-aware RL humanoid locomotion - Unitree G1 · Isaac Lab**
+PPO policy with a stand → walk → domain-randomization curriculum; a CNN encodes height scans +
+proprioception. Domain randomization over mass, friction, PD gains, pushes, noise, and actuator
+and observation latency. Policy hardened for Sim-to-real, and the pipeline was successfully deployed on hardware 
+- the G1 stands, turns, and walks omnidirectionally with a loose tether (for equipment safety).
 
 **ADAPT - Active Dynamic Avoidance with Pedestrian Trajectory Reasoning (ROS 2 / UIUC GEM e4)**
 Diffusion Transformer pedestrian predictor (DDPM-trained, DDIM 10-step) feeds an MPPI motion planner
