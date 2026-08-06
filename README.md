@@ -10,18 +10,6 @@ stack:      ROS 2 · Isaac Lab · PyTorch · OpenCV · Nav2
 
 ---
 
-## What I'm building
-
-**Cooperative multi-USV bathymetric mapping - BlueBoat · MOOS-IvP**
-Leader/follower BlueBoat USVs running coordinated GPS-waypoint navigation under MOOS-IvP, fusing
-sonar returns into shared bathymetric maps. Mission planning and monitoring through QGroundControl.
-
-**Autonomous crop-row phenotyping agbot - Farm-ng Amiga**
-Autonomous crop-row traversal for in-field phenotyping on the Farm-ng Amiga platform, combining
-RTK-GNSS waypointing with camera-based lane tracking and an MPC controller to hold the row.
-
----
-
 ## What I've recently built
 
 **Visuomotor Bipedal Humanoid Locomotion - Unitree G1 · Isaac Lab**
